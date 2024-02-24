@@ -24,7 +24,7 @@
 	</test>
 
 	<test name="Previous Flight Booking Orders List">
-	<parameter name="OrderID" value="10059"></parameter>
+	<parameter name="OrderID" value="10061"></parameter>
 	<parameter name="vieworderID" value="10030"></parameter>
 		<classes>
 			<class name="TestCases.CheckPreviousBookingOrders"></class>
