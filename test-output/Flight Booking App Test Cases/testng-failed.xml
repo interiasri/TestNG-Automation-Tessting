@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Flight Booking App Test Cases]">
+  <test thread-count="5" name="Pick FLight Reseravtion Date TestCase(failed)">
+    <parameter name="d" value="10"/>
+    <parameter name="y" value="2025"/>
+    <parameter name="m" value="April"/>
+    <classes>
+      <class name="TestCases.CheckPickFlightDate">
+        <methods>
+          <include name="invokeApp"/>
+          <include name="logout"/>
+          <include name="CheckPickDate" invocation-numbers="0"/>
+          <include name="closeApp"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- TestCases.CheckPickFlightDate -->
+    </classes>
+  </test> <!-- Pick FLight Reseravtion Date TestCase(failed) -->
+  <test thread-count="5" name="Booking Flight Ticket Test Case(failed)">
+    <parameter name="d" value="10"/>
+    <parameter name="MyName" value="Sridhar Parutabad"/>
+    <parameter name="fclassname" value="Business"/>
+    <parameter name="y" value="2025"/>
+    <parameter name="Tickets" value="5"/>
+    <parameter name="From" value="Hyderabad"/>
+    <parameter name="To" value="Kolkatha"/>
+    <parameter name="m" value="April"/>
+    <parameter name="airlineName" value="Soft Airlines"/>
+    <classes>
+      <class name="TestCases.CheckSearchFlightResultsList">
+        <methods>
+          <include name="numberOfTickets"/>
+          <include name="invokeApp"/>
+          <include name="clickInsertOrder"/>
+          <include name="logout"/>
+          <include name="checkflightsRoute"/>
+          <include name="selectFlightClass"/>
+          <include name="selectFlight"/>
+          <include name="closeApp"/>
+          <include name="enterName"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- TestCases.CheckSearchFlightResultsList -->
+    </classes>
+  </test> <!-- Booking Flight Ticket Test Case(failed) -->
+  <test thread-count="5" name="Previous Flight Booking Orders List(failed)">
+    <classes>
+      <class name="TestCases.CheckPreviousBookingOrders">
+        <methods>
+          <include name="deleteUnwantedOrder"/>
+          <include name="invokeApp"/>
+          <include name="isOrdersModuleMessageDisplayed"/>
+          <include name="logout"/>
+          <include name="getOrderList"/>
+          <include name="closeApp"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- TestCases.CheckPreviousBookingOrders -->
+    </classes>
+  </test> <!-- Previous Flight Booking Orders List(failed) -->
+</suite> <!-- Failed suite [Flight Booking App Test Cases] -->

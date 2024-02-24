@@ -1,0 +1,33 @@
+<suite name="Flight Booking App Test Cases">
+	<test name="Pick FLight Reseravtion Date TestCase">
+	<parameter name="m" value="April"></parameter>
+	<parameter name="y" value="2025"></parameter>
+	<parameter name="d" value="10"></parameter>
+		<classes>
+			<class name="TestCases.CheckPickFlightDate"></class>
+		</classes>
+	</test>
+
+	<test name="Booking Flight Ticket Test Case">
+	<parameter name="From" value="Hyderabad"></parameter>
+	<parameter name="To" value="Kolkatha"></parameter>
+	<parameter name="m" value="April"></parameter>
+	<parameter name="y" value="2025"></parameter>
+	<parameter name="d" value="10"></parameter>
+	<parameter name="airlineName" value="Soft Airlines"></parameter>
+	<parameter name="fclassname" value="Business"></parameter>
+	<parameter name="MyName" value="Sridhar Parutabad"></parameter>
+	<parameter name="Tickets" value="2"></parameter>
+		<classes>
+			<class name="TestCases.CheckSearchFlightResultsList"></class>
+		</classes>
+	</test>
+
+	<test name="Previous Flight Booking Orders List">
+	<parameter name="OrderID" value="10059"></parameter>
+	<parameter name="vieworderID" value="10030"></parameter>
+		<classes>
+			<class name="TestCases.CheckPreviousBookingOrders"></class>
+		</classes>
+	</test>
+</suite>
